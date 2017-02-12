@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from views import voice_view 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^voice/', voice_view, name="voice")
 ]

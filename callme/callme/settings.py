@@ -25,7 +25,10 @@ SECRET_KEY = 'dym%o00zf#0wu7g9e8$n5z%8sr&vetpc1-l4@y(sv0gdidom8j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'd7850c64.ngrok.io',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -75,7 +78,7 @@ WSGI_APPLICATION = 'callme.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
